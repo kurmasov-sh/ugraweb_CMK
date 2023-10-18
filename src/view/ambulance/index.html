@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Центр медицины катастроф" />
+    <meta name="description" content="Центр медицины катастроф - Казённое учреждение Ханты-Мансийского автономного округа – Югры" />
+    <link href="/src/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="/src/view/ambulance/style.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=b36eb031-03ba-4622-ad65-299fc50486e0&lang=ru_RU"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" href="/src/img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="/src/js/main.js"></script>
+    <script type="text/javascript" src="/src/js/map.js"></script>
+    <script type="text/javascript" src="/src/js/datepicker.min.js"></script>
+    <title>Центр медицины катастроф - Казённое учреждение Ханты-Мансийского автономного округа – Югры</title>
+</head>
+<body>
+<div class="header-mobile">
+    <div class="container header-container-top">
+        <a class="header-logo" href="/"><img src="/src/img/logo.svg"/></a>
+        <a href="#" class="btn-menu"></a>
+    </div>
+    <div class="header-line">
+        <div class="container">
+            <div class="header-line__title t-b arrow-t">Горячая линия</div>
+            <div class="header-line__phone header-line__hidden">
+                <div class="header-line__phone-block">
+                    <span class="s-t">Диспетчер:</span>
+                    <a class="t-b" href="tel:+73467939170">&nbsp;+7 (3467) 939-170,</a><br>
+                    <a class="t-b" href="tel:+73467939171">&nbsp;+7 (3467) 939-171,</a>
+                    <a class="t-b" href="tel:88002220803">&nbsp;8 (800) 222-08-03</a>
+                </div>
+                <div class="header-line__phone-block">
+                    <span class="s-t">Дежурный врач:</span>
+                    <a class="t-b" href="tel:+73467939175">+7 (3467) 939175</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-desc">
+    <div class="container header-container">
+        <div class="header-block">
+            <div class="header-logo">
+                <a href="/"><img src="/src/img/logo.svg"
+                                 alt="КУ &quot;Центр Медицины Катастроф&quot;"></a>
+            </div>
+            <div class="header-line">
+                <div class="header-top">
+                    <div class="header-top__tel">
+                        <div class="s-m">Диспетчер: <a class="t-b" href="tel:+73467939170">&nbsp;+7 (3467) 939-170,</a> <a
+                                class="t-b" href="tel:+73467939171">&nbsp;+7
+                            (3467) 939-171,</a>
+                            <a class="t-b" href="tel:88002220803">&nbsp;8 (800) 222-08-03</a></div>
+                        <div class="s-m">Дежурный врач: <a class="t-b" href="tel:+73467939175">&nbsp;+7 (3467) 939175</a>
+                        </div>
+                    </div>
+                    <form action="/search/" class="header-search">
+                        <div class="header-search__input">
+                            <img src="/src/img/h_search.svg" alt="Поиск">
+                            <input type="text" value="" name="q" placeholder="Что ищем?">
+                        </div>
+                        <button>Искать</button>
+                    </form>
+                    <div class="header-top__icon">
+                        <img class="main-search__icon" src="/src/img/h_search.svg"
+                             alt="Поиск">
+                        <a href="#slow-vision" class="header-slow-vision"><img
+                                src="/src/img/h_eye.svg"
+                                alt="Версия для слабовидящих"></a>
+                    </div>
+                </div>
+                <div class="header-nav">
+                    <div class="header-nav__sub">Центр Медицины Катастроф        <div class="header-nav__sub-items">
+                        <a class="header-nav__item r-t"
+                           href="/cmk/center/">О центре</a>
+                        <a class="header-nav__item r-t"
+                           href="/cmk/sub/">Подразделения</a>
+                        <a class="header-nav__item r-t"
+                           href="/cmk/ambulance/">Скорая помощь</a>
+                        <a class="header-nav__item r-t"
+                           href="/cmk/road/">Трассовая служба</a>
+                        <a class="header-nav__item r-t"
+                           href="/cmk/school/">Учебный центр</a>
+                        <a class="header-nav__item r-t"
+                           href="/cmk/pay/">Платные услуги</a>
+                        <a class="header-nav__item r-t"
+                           href="/cmk/props/">Реквизиты</a>
+                        <a class="header-nav__item r-t"
+                           href="/cmk/corp/">Для сотрудников</a>
+                        <a class="header-nav__item r-t"
+                           href="/cmk/vacancies/">Вакансии</a>
+                    </div></div>
+                    <div class="header-nav__sub">Служба медицины катастроф        <div class="header-nav__sub-items">
+                        <a class="header-nav__item r-t"
+                           href="/smk/service/">О службе</a>
+                        <a class="header-nav__item r-t"
+                           href="/smk/structure/">Структура</a>
+                        <a class="header-nav__item r-t"
+                           href="/smk/acts/">Нормативно-правовыве акты</a>
+                        <a class="header-nav__item r-t"
+                           href="/smk/reestr/">Реестр учреждений здравоохранения</a>
+                    </div></div>
+
+                    <div class="header-nav__sub">Пресс-центр        <div class="header-nav__sub-items">
+                        <a class="header-nav__item r-t"
+                           href="/press/news/">Новости</a>
+                        <a class="header-nav__item r-t"
+                           href="/press/media/">Фото и Видео</a>
+                    </div></div>
+
+                    <div class="header-nav__sub">Контакты        <div class="header-nav__sub-items">
+                        <a class="header-nav__item r-t"
+                           href="/contacts/cmk/">Центр медицины катастроф</a>
+                        <a class="header-nav__item r-t"
+                           href="/contacts/smk/">Служба медицины катастроф</a>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-block__bottom">
+            <div class="header-nav">
+                <div class="header-nav__sub">Центр Медицины Катастроф        <div class="header-nav__sub-items">
+                    <a class="header-nav__item r-t"
+                       href="/cmk/center/">О центре</a>
+                    <a class="header-nav__item r-t"
+                       href="/cmk/sub/">Подразделения</a>
+                    <a class="header-nav__item r-t"
+                       href="/cmk/ambulance/">Скорая помощь</a>
+                    <a class="header-nav__item r-t"
+                       href="/cmk/road/">Трассовая служба</a>
+                    <a class="header-nav__item r-t"
+                       href="/cmk/school/">Учебный центр</a>
+                    <a class="header-nav__item r-t"
+                       href="/cmk/pay/">Платные услуги</a>
+                    <a class="header-nav__item r-t"
+                       href="/cmk/props/">Реквизиты</a>
+                    <a class="header-nav__item r-t"
+                       href="/cmk/corp/">Для сотрудников</a>
+                    <a class="header-nav__item r-t"
+                       href="/cmk/vacancies/">Вакансии</a>
+                </div></div>
+                <div class="header-nav__sub">Служба медицины катастроф        <div class="header-nav__sub-items">
+                    <a class="header-nav__item r-t"
+                       href="/smk/service/">О службе</a>
+                    <a class="header-nav__item r-t"
+                       href="/smk/structure/">Структура</a>
+                    <a class="header-nav__item r-t"
+                       href="/smk/acts/">Нормативно-правовыве акты</a>
+                    <a class="header-nav__item r-t"
+                       href="/smk/reestr/">Реестр учреждений здравоохранения</a>
+                </div></div>
+                <div class="header-nav__sub">Пресс-центр        <div class="header-nav__sub-items">
+                    <a class="header-nav__item r-t"
+                       href="/press/news/">Новости</a>
+                    <a class="header-nav__item r-t"
+                       href="/press/media/">Фото и Видео</a>
+                </div></div>
+                <div class="header-nav__sub">Контакты        <div class="header-nav__sub-items">
+
+                    <a class="header-nav__item r-t"
+                       href="/contacts/cmk/">Центр медицины катастроф</a>
+                    <a class="header-nav__item r-t"
+                       href="/contacts/smk/">Служба медицины катастроф</a>
+                </div></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<main class="main">
+    <div class="container">
+        <div class="main-top">
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs__link">
+                    Главная
+                    <span>
+                        -
+                    </span>
+                </a>
+                <a href="#" class="breadcrumbs__link">
+                    Центр медицины катастроф
+                    <span>
+                        -
+                    </span>
+                </a>
+                <a href="#" class="breadcrumbs__link">
+                    Подразделения
+                    <span>
+                        -
+                    </span>
+                </a>
+                <a href="#" class="breadcrumbs__link breadcrumb-active">
+                    Скорая специализированная медицинская помощь
+                </a>
+            </div>
+            <div class="main-top__title">
+                <h1 class="h1">Скорая специализированная медицинская помощь</h1>
+            </div>
+            <div class="main-top__img">
+                <img src="/src/img/ambulance-title-img.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="main-content-left">
+                <p class="main-content__text">
+                    Важным звеном в обеспечении доступности квалифицированной и специализированной, в том числе высокотехнологичной медицинской помощи населению отдалённых и труднодоступных местностей, коренным народам
+                    Севера на территории автономного округа является санитарная авиация.
+                </p>
+                <p class="main-content__text">
+                    Специализированную (санитарно-авиационную) скорую медицинскую помощь населению автономного округа оказывают 4 отделения экстренной и плановой консультативной медицинской помощи (далее - ОЭПКМП) УХМАО-Югры «Центр медицины катастроф» и 3-х его филиалов: г. Сургут, Нижневартовск, п. Березово.
+                    По договору с авиапредприятием «Ютэйр» Центр арендует 4 вертолёта «Ми-8», 2 вертолёта ВО-105 «EUROCOPTER» самолет «Як-40».
+                </p>
+                <p class="main-content__text">
+                    По показаниям к оказанию специализированной (санитарно-авиационной) скорой помощи привлекаются врачи узких специальностей учреждений здравоохранения окружного подчинения, а при необходимости сотрудники клинических кафедр Ханты-Мансийского медицинского института и медицинского факультета Сургутского университета.
+                </p>
+                <p class="main-content__text">
+                    ОЭПКМП укомплектованы санитарными автомобилями класса «В», мобильной связью, в том числе спутниковой, современным транспортным медицинским имуществом, позволяющим оказывать скорую и неотложную медицинскую помощью, как по месту вызова, так и при транспортировке воздушным и наземным транспортом в больничные учреждения.
+                </p>
+                <img src="/src/img/ambulance-content-img.png" alt="">
+                <p class="main-content__text">
+                    Более 90% вылетов выполняется в указанные сроки. Задержки выполнения санитарного задания на 2 и более часов связаны с метеорологическими и климатическими факторами территории автономного округа,
+                    приравненной к районам Крайнего Севера. Выезд автомобильного транспорта для выполнения санитарного задания составляет в среднем не более 15 минут.
+                </p>
+                <p class="main-content__text">
+                    Кроме оказания экстренной и плановой консультативной медицинской помощи силы санитарной авиации привлекались для доставки врачебно-сестринских бригад на стойбища и трудно доступные населённые пункты для проведения профилактических осмотров и диспансерного наблюдения коренного населения ханты, манси,
+                    транспортировки медицинских грузов, компонентов и препаратов крови в учреждения здравоохранения сельских населённых пунктов.
+                </p>
+
+            </div>
+            <div class="main-content-right">
+                <div class="main-content__block">
+                    <p class="h3">
+                        В каждом отделении санитарной авиации в круглосуточном режиме по графику сменности дежурят борт врач, борт фельдшер, врач анестезиолог-реаниматолог, медицинская сестра — анестезист
+                    </p>
+                </div>
+                <div class="main-content-right__text">
+                    <p>В зоне ответственности отделений санитарной авиации расположены 191 сельский населённый пункт, из них 136 относятся к отдалённым и труднодоступным местностям</p>
+                </div>
+                <div class="main-content__block">
+                    <p class="h3">
+                        Сроки вылета бригад
+                        с момента поступления заявок составляет:
+                    </p>
+                    <p class="h3">
+                        - при температуре окружающего воздуха выше 00 - не более 45 минут,
+                    </p>
+                    <p class="h3">
+                        - при температуре ниже 00 - не более 1.5 часа
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery__top"></div>
+            <div class="gallery__slider"></div>
+        </div>
+
+        <div class="map">
+
+        </div>
+
+    </div>
+</main>
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-col">
+            <div class="footer-col__block">
+                <div class="footer-logo"><img src="/src/img/f-logo.svg" alt="Центр медицины катастроф"></div>
+                <div class="footer-copyright">
+                    <p>© 2001 - 2023. Казённое учреждение Ханты-<br>Мансийского автономного округа – Югры</p>
+                    <span>“ЦЕНТР МЕДИЦИНЫ КАТАСТРОФ”</span>
+                </div>
+            </div>
+            <div class="footer-col__block">
+                <div class="footer-soc">
+                    <a href="https://vk.com/cmkhmao" target="_blank" class="f-vk"></a>
+                    <a href="mailto:mail@cmkhmao.ru" target="_blank" class="f-mail"></a>
+                </div>
+                <p>628001 г. Ханты-Мансийск, ул. Сутормина 20</p>
+            </div>
+        </div>
+        <div class="footer-col">
+            <a class="footer-col__org__link" href="https://minzdrav.gov.ru/" target="_blank"><img
+                    src="/src/img/mzrf.png"
+                    alt="Министерство здравоохранения Российской Федерации"></a>
+            <a class="footer-col__org__link" href="https://admhmao.ru/" target="_blank"><img
+                    src="/src/img/admhmao.png"
+                    alt="Единый официальный сайт государственных органов Ханты-мансийский автономный округ - Югра"></a>
+            <a class="footer-col__org__link" href="https://dzhmao.ru/" target="_blank"><img
+                    src="/src/img/dzhmao.png"
+                    alt="Департамент здравоохранения Ханты-мансийского автономного округа - Югра"></a>
+        </div>
+        <div class="footer-col footer-nav">
+            <a href="#">Центр медицины катастроф</a>
+            <a href="#">Служба медицины катастроф</a>
+            <a href="#">Нормативно-правовые акты</a>
+            <a href="#">Реестр учреждений здравоохранения</a>
+            <a href="#">Антикоррупционная деятельность</a>
+            <a href="#">Информация для населения</a>
+            <a href="#">Архив новостей</a>
+            <a href="#">Фотогалерея</a>
+            <a href="#">Контактная информация</a>
+        </div>
+        <div class="footer-col footer-col-dir">
+            <div class="footer-col__dir-contacts">
+                Костин <br>Василий Иванович
+                <span>Директор КУ “Центр медицины катастроф”</span>
+                <a href="tel:+73467338312">+7 (3467) 338-312</a>
+                <a href="tel:+79526926392">+7 (952) 692-63-62</a>
+                <span>Прием по личным вопросам <br>каждый вторник с 16.30 до 18.00</span>
+            </div>
+            <a class="btn-arrow" href="#">Задать вопрос <span></span></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

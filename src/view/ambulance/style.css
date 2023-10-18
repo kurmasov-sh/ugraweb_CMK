@@ -1,0 +1,27 @@
+.main-top__img {
+    margin: 40px 0;
+}
+.main-content {
+    display: flex;
+}
+.main-content-left {
+    margin-right: 80px;
+}
+.main-content__block {
+    border-radius: 20px;
+    padding: 60px;
+    background-color: #597D69;
+}
+
+.main-content__block p{
+    color: #FFFFFF;
+}
+.main-content-right__text {
+    border-left: 1px solid #597d69;
+    padding-left: 40px;
+    margin: 135px 0;
+}
+.main-content__text {
+    font-size: 20px;
+    margin: 20px 0;
+}
