@@ -1,7 +1,12 @@
+img {
+    width: 100%;
+}
 .main-top__img {
     margin: 40px 0;
 }
-
+.breadcrumb-active{
+    color: #9D9D9D;
+}
 .main-content {
     display: flex;
     margin-bottom: 41px;
@@ -24,6 +29,8 @@
     color: #FFFFFF;
 }
 .main-content-right__text {
+    font-size: 18px;
+    font-weight: bold;
     border-left: 1px solid #597d69;
     padding-left: 40px;
 }
@@ -33,6 +40,7 @@
     line-height: 32px;
     margin: 10px 0;
 }
+
 
 .main-content-left img {
     margin: 10px 0;
@@ -44,7 +52,7 @@
     justify-content: space-between;
     border-bottom: 1px solid #597d69;
 }
-.gallery__arrow-right img {
+.gallery__arrow-l img{
     margin-right: 40px;
     transform: rotate(180deg);
 }
@@ -58,4 +66,7 @@
 }
 .map {
     margin: 40px 0 120px 0;
+}
+.owl-nav img {
+    cursor: pointer;
 }
