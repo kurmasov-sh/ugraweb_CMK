@@ -86,7 +86,7 @@
     transform: rotate(180deg);
 }
 .slider__arrow-l:hover {
-    background-image: url('f-arrow-r-h.svg');
+    background-image: url("/src/view/ambulance/f-arrow-r-h.svg");
 }
 .slider__wrapper {
     overflow: hidden;
